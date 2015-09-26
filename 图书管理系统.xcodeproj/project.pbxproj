@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A95BB721BB58B06003989C4 /* WinCon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A95BB701BB58B06003989C4 /* WinCon.cpp */; settings = {ASSET_TAGS = (); }; };
+		1A95BB771BB58CF7003989C4 /* NewBook.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A95BB751BB58CF7003989C4 /* NewBook.cpp */; settings = {ASSET_TAGS = (); }; };
 		1ADAEE321BAAB95400FE06ED /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1ADAEE311BAAB95400FE06ED /* main.cpp */; };
+		1ADAEE401BAC038A00FE06ED /* Book.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1ADAEE3F1BAC038A00FE06ED /* Book.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +26,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1A95BB701BB58B06003989C4 /* WinCon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WinCon.cpp; sourceTree = "<group>"; };
+		1A95BB741BB58B5B003989C4 /* WinCon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinCon.h; sourceTree = "<group>"; };
+		1A95BB751BB58CF7003989C4 /* NewBook.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NewBook.cpp; sourceTree = "<group>"; };
+		1A95BB761BB58CF7003989C4 /* NewBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewBook.h; sourceTree = "<group>"; };
 		1ADAEE2E1BAAB95400FE06ED /* 图书管理系统 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "图书管理系统"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ADAEE311BAAB95400FE06ED /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		1ADAEE3D1BAABAF300FE06ED /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		1ADAEE3F1BAC038A00FE06ED /* Book.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Book.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +47,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A95BB6F1BB58A9B003989C4 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				1A95BB701BB58B06003989C4 /* WinCon.cpp */,
+				1A95BB741BB58B5B003989C4 /* WinCon.h */,
+				1A95BB751BB58CF7003989C4 /* NewBook.cpp */,
+				1A95BB761BB58CF7003989C4 /* NewBook.h */,
+			);
+			name = source;
+			sourceTree = "<group>";
+		};
 		1ADAEE251BAAB95400FE06ED = {
 			isa = PBXGroup;
 			children = (
@@ -58,8 +78,19 @@
 			isa = PBXGroup;
 			children = (
 				1ADAEE311BAAB95400FE06ED /* main.cpp */,
+				1ADAEE381BAAB96D00FE06ED /* class */,
+				1A95BB6F1BB58A9B003989C4 /* source */,
 			);
 			path = "图书管理系统";
+			sourceTree = "<group>";
+		};
+		1ADAEE381BAAB96D00FE06ED /* class */ = {
+			isa = PBXGroup;
+			children = (
+				1ADAEE3F1BAC038A00FE06ED /* Book.cpp */,
+				1ADAEE3D1BAABAF300FE06ED /* Book.h */,
+			);
+			name = class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +149,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ADAEE401BAC038A00FE06ED /* Book.cpp in Sources */,
+				1A95BB771BB58CF7003989C4 /* NewBook.cpp in Sources */,
+				1A95BB721BB58B06003989C4 /* WinCon.cpp in Sources */,
 				1ADAEE321BAAB95400FE06ED /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,6 +269,7 @@
 				1ADAEE371BAAB95400FE06ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
