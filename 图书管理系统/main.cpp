@@ -28,6 +28,15 @@ int GetSelect()
     return atoi(buf);
 }
 
+//分支测试，测试完后删除
+int GetSelect_test()
+{
+    char buf[256];
+    gets(buf);
+    return atoi(buf);
+}
+
+
 void mainloop()
 {
     ShowWelcome();
