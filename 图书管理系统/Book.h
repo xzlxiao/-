@@ -13,6 +13,8 @@
 
 #endif /* defined(__________Book__) */
 
+void GuideInput();
+
 #define NUM1 128
 #define NUM2 50
 class CBook
