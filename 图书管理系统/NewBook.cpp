@@ -9,6 +9,7 @@
 #include "NewBook.h"
 #include "Book.h"
 #include <iostream>
+#include "WinCon.h"
 using namespace std;
 
 void GuideInput()
@@ -19,5 +20,15 @@ void GuideInput()
     char inAuthor[NUM2];
     
     cout << "输入书名" << endl;
-    cin >> inIsdn;
+        cin >> inName;
+    cout << "输入ISBN" << endl;
+        cin >> inIsdn;
+    cout << "输入价格" << endl;
+        cin >> inPrise;
+    cout << "输入作者" << endl;
+        cin >> inAuthor;
+    CBook book(inName, inIsdn, inPrise, inAuthor);
+    book.WriteData();
+    cout << "Write Finish" << endl;
+    WaitUser();
 }
