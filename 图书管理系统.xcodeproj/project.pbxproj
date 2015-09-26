@@ -30,7 +30,7 @@
 		1A95BB741BB58B5B003989C4 /* WinCon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinCon.h; sourceTree = "<group>"; };
 		1A95BB751BB58CF7003989C4 /* NewBook.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NewBook.cpp; sourceTree = "<group>"; };
 		1A95BB761BB58CF7003989C4 /* NewBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewBook.h; sourceTree = "<group>"; };
-		1A95BB781BB67644003989C4 /* CONIO.H */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CONIO.H; sourceTree = "<group>"; };
+		1A95BB791BB67745003989C4 /* conio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conio.h; sourceTree = "<group>"; };
 		1ADAEE2E1BAAB95400FE06ED /* 图书管理系统 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "图书管理系统"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ADAEE311BAAB95400FE06ED /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1ADAEE3D1BAABAF300FE06ED /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
@@ -51,7 +51,7 @@
 		1A95BB6F1BB58A9B003989C4 /* source */ = {
 			isa = PBXGroup;
 			children = (
-				1A95BB781BB67644003989C4 /* CONIO.H */,
+				1A95BB791BB67745003989C4 /* conio.h */,
 				1A95BB701BB58B06003989C4 /* WinCon.cpp */,
 				1A95BB741BB58B5B003989C4 /* WinCon.h */,
 				1A95BB751BB58CF7003989C4 /* NewBook.cpp */,
