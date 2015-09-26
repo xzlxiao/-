@@ -6,7 +6,6 @@
 //  Copyright © 2015年 肖镇龙. All rights reserved.
 //
 
-#include "NewBook.h"
 #include "Book.h"
 #include <iostream>
 #include "WinCon.h"
