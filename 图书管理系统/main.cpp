@@ -20,7 +20,6 @@
 #define CMD_LINES 25
 using namespace std;
 
-
 int GetSelect()
 {
     char buf[256];
@@ -28,29 +27,14 @@ int GetSelect()
     return atoi(buf);
 }
 
-void mainloop()
+
+int main()
 {
-    ShowWelcome();
-    while(1)
-    {
-        ClearScreen();
-        ShowWelcome();
-        ShowRootMenu();
-        switch(GetSelect())
-        {
-            case 1:
-                ClearScreen();
-                GuideInput();
-                break;
-            case 2:
-                ClearScreen();
-                ViewData();
-                break;
-            case 3:
-                ClearScreen();
-                DeleteBookFromFile();
-                break;
-        }
-    }
+    
+    SetScreenGrid();
+    SetSysCaption("图书管理系统");
+    mainloop();
+    return 0;
 }
+
 

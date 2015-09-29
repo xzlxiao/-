@@ -163,3 +163,14 @@ void CBook::DeleteData(int iCount)
     ofile.close();
     remove("temp.dat");
 }
+
+void DeleteBookFromFile()
+{
+    int iDelCount;
+    cout << "Input delete index" << endl;
+    cin >> iDelCount;
+    CBook tmpbook;
+    tmpbook.DeleteData(iDelCount);
+    cout << "Delete Finish" << endl;
+    WaitUser();
+}

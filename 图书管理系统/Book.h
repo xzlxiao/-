@@ -10,6 +10,7 @@
 #define __________Book__
 
 #include <stdio.h>
+#include "WinCon.h"
 
 #endif /* defined(__________Book__) */
 
@@ -41,3 +42,5 @@ public:
     void DeleteData(int iCount);
     void GetBookFromFile(int iCount);
 };
+
+void DeleteBookFromFile();

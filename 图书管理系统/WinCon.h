@@ -20,3 +20,6 @@ void ShowWelcome();
 void ShowRootMenu();
 void WaitUser();
 int GetSelect();
+
+void WaitView(int  iCurPage);
+void mainloop();
