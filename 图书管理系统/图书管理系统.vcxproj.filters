@@ -21,9 +21,6 @@
     <ClInclude Include="Book.h">
       <Filter>源文件</Filter>
     </ClInclude>
-    <ClInclude Include="NewBook.h">
-      <Filter>源文件</Filter>
-    </ClInclude>
     <ClInclude Include="WinCon.h">
       <Filter>源文件</Filter>
     </ClInclude>
@@ -39,6 +36,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="WinCon.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewData.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

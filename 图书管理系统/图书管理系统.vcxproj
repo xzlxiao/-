@@ -12,7 +12,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Book.h" />
-    <ClInclude Include="NewBook.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="WinCon.h" />
   </ItemGroup>
@@ -20,6 +19,7 @@
     <ClCompile Include="Book.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="NewBook.cpp" />
+    <ClCompile Include="ViewData.cpp" />
     <ClCompile Include="WinCon.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
