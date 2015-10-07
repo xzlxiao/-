@@ -1,9 +1,9 @@
 //
 //  Book.h
-//  å›¾ä¹¦ç®¡ç†ç³»ç»Ÿ
+//  Í¼Êé¹ÜÀíÏµÍ³
 //
-//  Created by è‚–é•‡é¾™ on 15/9/17.
-//  Copyright (c) 2015å¹´ è‚–é•‡é¾™. All rights reserved.
+//  Created by Ğ¤ÕòÁú on 15/9/17.
+//  Copyright (c) 2015Äê Ğ¤ÕòÁú. All rights reserved.
 //
 
 #ifndef __________Book__
@@ -30,14 +30,14 @@ public:
     CBook(char*cName, char*cIsbn, char*cPrice, char*cAuthor);
     ~CBook(){}
 public:
-    char* GetName();    //è·å–å›¾ä¹¦å
-    void SetName(char* cName);  //è®¾ç½®å›¾ä¹¦åç§°
-    char* GetPrice();   //è·å–ä»·æ ¼
-    void SetPrice(char* cPrice);    //è®¾ç½®ä»·æ ¼
-    char* GetIsbn();   //è·å–å›¾ä¹¦çš„ISBNç¼–å·
-    void SetIsbn(char* cIsbn);     //è®¾ç½®å›¾ä¹¦çš„ISBNç¼–å·
-    char* GetAuthor();  //è·å–å›¾ä¹¦çš„ä½œè€…
-    void SetAuthor(char* cAuthor);  //è®¾ç½®å›¾ä¹¦çš„ä½œè€…
+    char* GetName();    //»ñÈ¡Í¼ÊéÃû
+    void SetName(char* cName);  //ÉèÖÃÍ¼ÊéÃû³Æ
+    char* GetPrice();   //»ñÈ¡¼Û¸ñ
+    void SetPrice(char* cPrice);    //ÉèÖÃ¼Û¸ñ
+    char* GetIsbn();   //»ñÈ¡Í¼ÊéµÄISBN±àºÅ
+    void SetIsbn(char* cIsbn);     //ÉèÖÃÍ¼ÊéµÄISBN±àºÅ
+    char* GetAuthor();  //»ñÈ¡Í¼ÊéµÄ×÷Õß
+    void SetAuthor(char* cAuthor);  //ÉèÖÃÍ¼ÊéµÄ×÷Õß
     void WriteData();
     void DeleteData(int iCount);
     void GetBookFromFile(int iCount);

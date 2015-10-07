@@ -1,11 +1,11 @@
 //
 //  Book.cpp
-//  å›¾ä¹¦ç®¡ç†ç³»ç»Ÿ
+//  Í¼Êé¹ÜÀíÏµÍ³
 //
-//  Created by è‚–é•‡é¾™ on 15/9/17.
-//  Copyright (c) 2015å¹´ è‚–é•‡é¾™. All rights reserved.
+//  Created by Ğ¤ÕòÁú on 15/9/17.
+//  Copyright (c) 2015Äê Ğ¤ÕòÁú. All rights reserved.
 //
-//  å®ç°å›¾ä¹¦ä¿¡æ¯çš„è¯»å–ã€åˆ é™¤ã€ä¿¡æ¯æ›´æ”¹å’Œä¿¡æ¯å½•å…¥
+//  ÊµÏÖÍ¼ÊéĞÅÏ¢µÄ¶ÁÈ¡¡¢É¾³ı¡¢ĞÅÏ¢¸ü¸ÄºÍĞÅÏ¢Â¼Èë
 
 #include "Book.h"
 #include <string>
@@ -15,10 +15,10 @@
 using namespace std;
 CBook::CBook(char*cName, char*cIsbn, char*cPrice, char*cAuthor)
 {
-    strcmp(m_cName, cName);
-    strcmp(m_cIsbn, cIsbn);
-    strcmp(m_cPrice, cPrice);
-    strcmp(m_cAuthor, cAuthor);
+	strncpy_s(m_cName, cName, NUM1);
+	strncpy_s(m_cIsbn, cIsbn, NUM1);
+	strncpy_s(m_cPrice, cPrice, NUM2);
+	strncpy_s(m_cAuthor, cAuthor, NUM2);
 }
 
 char* CBook::GetName()
@@ -64,7 +64,7 @@ void CBook::SetAuthor(char *cAuthor)
 void CBook::WriteData()
 {
     ofstream ofile;
-    ofile.open("book.dat", ios::binary | ios::app);
+    ofile.open("book.dat", ios_base::binary | ios_base::app);
     try
     {
         ofile.write(m_cName, NUM1);
@@ -94,22 +94,22 @@ void CBook::GetBookFromFile(int iCount)
         ifile.read(cName, NUM1);
         if (ifile.tellg()>0)
         {
-            strncpy(m_cName, cName, NUM1);
+            strncpy_s(m_cName, cName, NUM1);
         }
         ifile.read(cIsbn, NUM1);
         if (ifile.tellg()>0)
         {
-            strncpy(m_cIsbn, cIsbn, NUM1);
+            strncpy_s(m_cIsbn, cIsbn, NUM1);
         }
         ifile.read(cPrise, NUM2);
         if (ifile.tellg()>0)
         {
-            strncpy(m_cPrice, cPrise, NUM2);
+            strncpy_s(m_cPrice, cPrise, NUM2);
         }
         ifile.read(cAuthor, NUM2);
         if (ifile.tellg()>0)
         {
-            strncpy(m_cAuthor, cAuthor, NUM2);
+            strncpy_s(m_cAuthor, cAuthor, NUM2);
         }
     }
     catch (...)
@@ -125,9 +125,9 @@ void CBook::DeleteData(int iCount)
     long respos;
     int iDataCount = 0;
     fstream file;
-    //å®šä¹‰è¾“å…¥æµfile <- book.dat
+    //¶¨ÒåÊäÈëÁ÷file <- book.dat
     fstream tmpfile;
-    //å®šä¹‰ä¸´æ—¶æ–‡ä»¶è¾“å…¥æµ tmpfile <- temp.dat
+    //¶¨ÒåÁÙÊ±ÎÄ¼şÊäÈëÁ÷ tmpfile <- temp.dat
     char cTempBuf[NUM1 + NUM1 + NUM2 + NUM2];
     ofstream ofile;
     file.open("book.dat", ios::binary | ios::in | ios::out);

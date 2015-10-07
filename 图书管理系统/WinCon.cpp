@@ -1,4 +1,4 @@
-//
+﻿//
 //  WinCon.cpp
 //  图书管理系统
 //
@@ -25,7 +25,7 @@ void ViewData(int iSelPage);
 void SetScreenGrid()
 {
     char sysSetBuff[80];
-    sprintf(sysSetBuff, "mode con cols=%d lines=%d", CMD_COLS, CMD_LINES);
+    sprintf_s(sysSetBuff, "mode con cols=%d lines=%d", CMD_COLS, CMD_LINES);
     system(sysSetBuff);
 }
 
@@ -45,7 +45,7 @@ void ClearScreen()
 void SetSysCaption(const char *pText)
 {
     char sysSetBuf[80];
-    sprintf(sysSetBuf, "title %s", pText);
+    sprintf_s(sysSetBuf, "title %s", pText);
     system(sysSetBuf);
 }
 
@@ -85,23 +85,23 @@ void WaitUser()
 {
     int ilnputPage = 0;
     cout << "enter 返回主菜单  q 退出" << endl;
-    char buf;
+    char buf[10];
     cin >> buf;
-    if (buf == 'q')
+    if (buf == "q")
         system("exit");
 }
 
 int GetSelect()
 {
     char buf[256];
-    gets(buf);
+	cin >> buf;
     return atoi(buf);
 }
 
 void WaitView(int  iCurPage)
 {
     char buf[256];
-    gets(buf);
+    cin >> buf;
     if(buf[0]=='q')
         system("exit");
     if(buf[0]=='m')
@@ -126,9 +126,7 @@ void mainloop()
                 break;
             case 2:
                 ClearScreen();
-                int iSelPage;
-                cin >> iSelPage;
-                ViewData(iSelPage);
+                ViewData(1);
                 break;
             case 3:
                 ClearScreen();

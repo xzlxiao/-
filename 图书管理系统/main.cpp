@@ -1,16 +1,16 @@
 //
 //  main.cpp
-//  å›¾ä¹¦ç®¡ç†ç³»ç»Ÿ
+//  Í¼Êé¹ÜÀíÏµÍ³
 //
-//  Created by è‚–é•‡é¾™ on 15/9/17.
-//  Copyright (c) 2015å¹´ è‚–é•‡é¾™. All rights reserved.
+//  Created by Ğ¤ÕòÁú on 15/9/17.
+//  Copyright (c) 2015Äê Ğ¤ÕòÁú. All rights reserved.
 //
 
 #include <stdio.h>
 #include <iostream>
 #include <iomanip>
 #include <stdlib.h>
-#include "conio.h"
+#include <conio.h>
 #include <string>
 #include <fstream>
 #include "Book.h"
@@ -20,21 +20,14 @@
 #define CMD_LINES 25
 using namespace std;
 
-int GetSelect()
-{
-    char buf[256];
-    gets(buf);
-    return atoi(buf);
-}
 
 
-int main()
+void main()
 {
     
     SetScreenGrid();
-    SetSysCaption("å›¾ä¹¦ç®¡ç†ç³»ç»Ÿ");
+    SetSysCaption("Í¼Êé¹ÜÀíÏµÍ³");
     mainloop();
-    return 0;
-}
+ }
 
 
